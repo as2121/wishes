@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best of Luck Wishes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+            background-size: 400% 400%;
+            animation: gradientShift 15s ease infinite;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            color: white;
+            padding: 20px;
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            max-width: 900px;
+            width: 90%;
+            text-align: center;
+            padding: 2.5rem;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            border-radius: 25px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .container::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0) 70%);
+            z-index: -1;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            text-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 1.5s ease-out;
+            background: linear-gradient(to right, #ffd700, #ffed4e, #ffd700);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            background-size: 200% auto;
+            animation: textShine 3s linear infinite;
+        }
+
+        @keyframes textShine {
+            to {
+                background-position: 200% center;
+            }
+        }
+
+        .message {
+            font-size: 1.5rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+            animation: slideUp 1.5s ease-out 0.5s both;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .wishes-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .wish-card {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 1.5rem;
+            border-radius: 15px;
+            width: 250px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.4s ease;
+            animation: fadeIn 1.5s ease-out 1s both;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .wish-card:hover {
+            transform: translateY(-10px) scale(1.03);
+            background: rgba(255, 255, 255, 0.25);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .wish-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            color: #ffd700;
+        }
+
+        .wish-card p {
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .floating-elements {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        .floating-element {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            animation: float 15s infinite linear;
+        }
+
+        .floating-element:nth-child(1) {
+            width: 80px;
+            height: 80px;
+            top: 10%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .floating-element:nth-child(2) {
+            width: 120px;
+            height: 120px;
+            top: 70%;
+            left: 80%;
+            animation-delay: -5s;
+        }
+
+        .floating-element:nth-child(3) {
+            width: 60px;
+            height: 60px;
+            top: 20%;
+            left: 85%;
+            animation-delay: -10s;
+        }
+
+        .floating-element:nth-child(4) {
+            width: 100px;
+            height: 100px;
+            top: 80%;
+            left: 15%;
+            animation-delay: -7s;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+            25% {
+                transform: translate(20px, 30px) rotate(90deg);
+            }
+            50% {
+                transform: translate(0, 60px) rotate(180deg);
+            }
+            75% {
+                transform: translate(-20px, 30px) rotate(270deg);
+            }
+            100% {
+                transform: translate(0, 0) rotate(360deg);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .surprise-button {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 1.2rem 3rem;
+            background: linear-gradient(to right, #ff8a00, #ff2070);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            animation: pulse 2s infinite;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .surprise-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+            animation: none;
+        }
+
+        .surprise-button:active {
+            transform: translateY(0);
+        }
+
+        .surprise-button::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: 0.5s;
+        }
+
+        .surprise-button:hover::after {
+            left: 100%;
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(255, 138, 0, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 15px rgba(255, 138, 0, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(255, 138, 0, 0);
+            }
+        }
+
+        .confetti {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: #f0f;
+            opacity: 0.7;
+            animation: confettiFall 5s linear infinite;
+        }
+
+        @keyframes confettiFall {
+            0% {
+                transform: translateY(-100px) rotate(0deg);
+            }
+            100% {
+                transform: translateY(100vh) rotate(360deg);
+            }
+        }
+
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+            animation: fadeIn 0.5s ease-out;
+        }
+
+        .modal-content {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            padding: 3rem;
+            border-radius: 25px;
+            text-align: center;
+            max-width: 700px;
+            width: 90%;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+            position: relative;
+            overflow: hidden;
+            animation: modalSlideIn 0.7s ease-out;
+        }
+
+        @keyframes modalSlideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-50px) scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        .modal-content::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 70%);
+            z-index: -1;
+        }
+
+        .modal h2 {
+            font-size: 2.8rem;
+            margin-bottom: 1.5rem;
+            color: #ffd700;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .modal-wishes {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .modal-wish {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 1.2rem;
+            border-radius: 12px;
+            text-align: left;
+            animation: slideUp 0.5s ease-out;
+            backdrop-filter: blur(5px);
+            border-left: 4px solid #ffd700;
+        }
+
+        .modal-wish i {
+            color: #ffd700;
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+
+        .close-modal {
+            background: linear-gradient(to right, #ff8a00, #ff2070);
+            color: white;
+            border: none;
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 1rem;
+        }
+
+        .close-modal:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .loading {
+            display: none;
+            margin-top: 2rem;
+            font-size: 1.2rem;
+            color: #ffd700;
+        }
+
+        .loading-dots {
+            display: inline-block;
+            position: relative;
+            width: 80px;
+            height: 20px;
+        }
+
+        .loading-dots div {
+            position: absolute;
+            top: 0;
+            width: 13px;
+            height: 13px;
+            border-radius: 50%;
+            background: #ffd700;
+            animation-timing-function: cubic-bezier(0, 1, 1, 0);
+        }
+
+        .loading-dots div:nth-child(1) {
+            left: 8px;
+            animation: loading-dots1 0.6s infinite;
+        }
+
+        .loading-dots div:nth-child(2) {
+            left: 8px;
+            animation: loading-dots2 0.6s infinite;
+        }
+
+        .loading-dots div:nth-child(3) {
+            left: 32px;
+            animation: loading-dots2 0.6s infinite;
+        }
+
+        .loading-dots div:nth-child(4) {
+            left: 56px;
+            animation: loading-dots3 0.6s infinite;
+        }
+
+        @keyframes loading-dots1 {
+            0% { transform: scale(0); }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes loading-dots3 {
+            0% { transform: scale(1); }
+            100% { transform: scale(0); }
+        }
+
+        @keyframes loading-dots2 {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(24px, 0); }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .message {
+                font-size: 1.2rem;
+            }
+            
+            .wish-card {
+                width: 100%;
+                max-width: 300px;
+            }
+            
+            .surprise-button {
+                padding: 1rem 2rem;
+                font-size: 1.1rem;
+            }
+            
+            .modal-content {
+                padding: 2rem;
+            }
+            
+            .modal h2 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="floating-elements">
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+    </div>
+
+    <div class="container">
+        <h1>Best of Luck!</h1>
+        
+        <p class="message">
+            Wishing you immense success in all your endeavors. May your dedication and hard work lead you to amazing achievements. 
+            You've got this!
+        </p>
+        
+        <div class="wishes-container">
+            <div class="wish-card">
+                <h3>Success Awaits</h3>
+                <p>May every step you take lead you closer to your goals and aspirations.</p>
+            </div>
+            
+            <div class="wish-card">
+                <h3>Positive Energy</h3>
+                <p>Sending positive vibes your way for confidence and excellent performance.</p>
+            </div>
+            
+            <div class="wish-card">
+                <h3>Bright Future</h3>
+                <p>May this be the beginning of a successful and rewarding journey for you.</p>
+            </div>
+        </div>
+        
+        <button class="surprise-button" id="surpriseBtn">
+            <i class="fas fa-gift"></i> Click for Special Wishes
+        </button>
+        
+        <div class="loading" id="loading">
+            <p>Preparing your special wishes...</p>
+            <div class="loading-dots">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Special Wishes -->
+    <div class="modal" id="wishesModal">
+        <div class="modal-content">
+            <h2>Best of Luck Wishes!</h2>
+            
+            <div class="modal-wishes">
+                <div class="modal-wish">
+                    <i class="fas fa-star"></i>
+                    <span>May your path be filled with success and happiness.</span>
+                </div>
+                
+                <div class="modal-wish">
+                    <i class="fas fa-heart"></i>
+                    <span>Wishing you the strength to overcome any challenge that comes your way.</span>
+                </div>
+                
+                <div class="modal-wish">
+                    <i class="fas fa-trophy"></i>
+                    <span>May you achieve all your goals and make your dreams come true.</span>
+                </div>
+                
+                <div class="modal-wish">
+                    <i class="fas fa-bolt"></i>
+                    <span>You have the talent and ability to accomplish anything you set your mind to.</span>
+                </div>
+                
+                <div class="modal-wish">
+                    <i class="fas fa-rocket"></i>
+                    <span>May success follow you in every step of your journey ahead.</span>
+                </div>
+            </div>
+            
+            <button class="close-modal" id="closeModal">Close</button>
+        </div>
+    </div>
+
+    <script>
+        // Create confetti effect
+        function createConfetti() {
+            const colors = ['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#ff00ff', '#00ffff'];
+            const container = document.body;
+            
+            for (let i = 0; i < 50; i++) {
+                const confetti = document.createElement('div');
+                confetti.className = 'confetti';
+                confetti.style.left = Math.random() * 100 + 'vw';
+                confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                confetti.style.animationDuration = (Math.random() * 3 + 3) + 's';
+                confetti.style.animationDelay = Math.random() * 5 + 's';
+                container.appendChild(confetti);
+                
+                // Remove confetti after animation completes
+                setTimeout(() => {
+                    confetti.remove();
+                }, 8000);
+            }
+        }
+        
+        // Create confetti periodically
+        setInterval(createConfetti, 3000);
+        
+        // Initial confetti burst
+        createConfetti();
+        
+        // Modal functionality
+        const surpriseBtn = document.getElementById('surpriseBtn');
+        const wishesModal = document.getElementById('wishesModal');
+        const closeModal = document.getElementById('closeModal');
+        const loading = document.getElementById('loading');
+        
+        surpriseBtn.addEventListener('click', function() {
+            // Create a burst of confetti
+            for (let i = 0; i < 100; i++) {
+                createConfetti();
+            }
+            
+            // Change button text and disable it
+            this.innerHTML = '<i class="fas fa-hourglass-half"></i> Preparing Wishes...';
+            this.style.background = 'linear-gradient(to right, #00b09b, #96c93d)';
+            this.disabled = true;
+            
+            // Show loading animation
+            loading.style.display = 'block';
+            
+            // Wait for 4-5 seconds then show modal
+            const delay = Math.floor(Math.random() * 1000) + 4000; // 4-5 seconds
+            setTimeout(() => {
+                // Hide loading
+                loading.style.display = 'none';
+                
+                // Show modal
+                wishesModal.style.display = 'flex';
+                
+                // Update button text
+                this.innerHTML = '<i class="fas fa-smile"></i> Wishes Ready!';
+            }, delay);
+        });
+        
+        closeModal.addEventListener('click', function() {
+            wishesModal.style.display = 'none';
+            
+            // Reset button after modal is closed
+            surpriseBtn.innerHTML = '<i class="fas fa-gift"></i> Click for Special Wishes';
+            surpriseBtn.style.background = 'linear-gradient(to right, #ff8a00, #ff2070)';
+            surpriseBtn.disabled = false;
+        });
+        
+        // Close modal when clicking outside
+        window.addEventListener('click', function(event) {
+            if (event.target === wishesModal) {
+                wishesModal.style.display = 'none';
+                
+                // Reset button after modal is closed
+                surpriseBtn.innerHTML = '<i class="fas fa-gift"></i> Click for Special Wishes';
+                surpriseBtn.style.background = 'linear-gradient(to right, #ff8a00, #ff2070)';
+                surpriseBtn.disabled = false;
+            }
+        });
+    </script>
+</body>
+</html>
