@@ -3,120 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday & Best Wishes Kunal | UPSC Journey</title>
+    <title>Best Wishes Dilip | Intelligence Bureau Interview Success</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --primary-blue: #0d1b3e;
+            --secondary-blue: #1c2e5e;
+            --accent-gold: #d4af37;
+            --accent-red: #b22222;
+            --light-color: #f8f9fa;
+            --dark-color: #0a1128;
+            --gradient-blue: linear-gradient(135deg, #0d1b3e 0%, #1c2e5e 50%, #2a3c7a 100%);
+            --gradient-gold: linear-gradient(135deg, #d4af37 0%, #f4d03f 50%, #ffeb3b 100%);
+            --gradient-red: linear-gradient(135deg, #b22222 0%, #dc143c 100%);
+            --shadow-light: 0 5px 15px rgba(0, 0, 0, 0.1);
+            --shadow-medium: 0 8px 25px rgba(0, 0, 0, 0.15);
+            --shadow-heavy: 0 12px 35px rgba(0, 0, 0, 0.2);
+        }
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        :root {
-            --primary-color: #1a237e;
-            --secondary-color: #ff5722;
-            --accent-color: #ffc107;
-            --light-color: #f5f5f5;
-            --dark-color: #0d1430;
-            --success-color: #4caf50;
-            --gradient-1: linear-gradient(135deg, #1a237e 0%, #283593 50%, #3949ab 100%);
-            --gradient-2: linear-gradient(135deg, #ff5722 0%, #ff8a65 100%);
-            --gradient-3: linear-gradient(135deg, #ffc107 0%, #ffeb3b 100%);
-            --gradient-gold: linear-gradient(135deg, #daa520 0%, #ffd700 50%, #f4d03f 100%);
-            --shadow-light: 0 5px 15px rgba(0, 0, 0, 0.1);
-            --shadow-medium: 0 10px 25px rgba(0, 0, 0, 0.15);
-            --shadow-heavy: 0 15px 35px rgba(0, 0, 0, 0.2);
+        html {
+            scroll-behavior: smooth;
         }
 
         body {
             font-family: 'Poppins', sans-serif;
-            background: var(--gradient-1);
+            background: var(--gradient-blue);
             color: var(--light-color);
             min-height: 100vh;
             overflow-x: hidden;
-            position: relative;
+            line-height: 1.6;
         }
 
         /* Animated Background */
-        .bg-animation {
+        .bg-pattern {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
             z-index: -2;
-            opacity: 0.3;
+            opacity: 0.15;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(212, 175, 55, 0.1) 0%, transparent 20%),
+                radial-gradient(circle at 90% 80%, rgba(178, 34, 34, 0.1) 0%, transparent 20%),
+                radial-gradient(circle at 50% 50%, rgba(28, 46, 94, 0.2) 0%, transparent 30%);
         }
 
-        .bg-circle {
+        .floating-icon {
             position: absolute;
-            border-radius: 50%;
-            background: var(--accent-color);
+            font-size: 1.5rem;
+            color: rgba(212, 175, 55, 0.3);
             animation: float 20s infinite linear;
         }
 
-        .bg-circle:nth-child(1) {
-            width: 80px;
-            height: 80px;
+        .floating-icon:nth-child(1) {
             top: 10%;
             left: 5%;
-            opacity: 0.4;
             animation-delay: 0s;
         }
 
-        .bg-circle:nth-child(2) {
-            width: 120px;
-            height: 120px;
-            top: 60%;
-            left: 80%;
-            opacity: 0.3;
+        .floating-icon:nth-child(2) {
+            top: 70%;
+            left: 85%;
             animation-delay: -5s;
         }
 
-        .bg-circle:nth-child(3) {
-            width: 60px;
-            height: 60px;
+        .floating-icon:nth-child(3) {
             top: 20%;
-            left: 85%;
-            opacity: 0.5;
+            left: 90%;
             animation-delay: -10s;
         }
 
-        .bg-circle:nth-child(4) {
-            width: 100px;
-            height: 100px;
-            top: 80%;
-            left: 10%;
-            opacity: 0.4;
+        .floating-icon:nth-child(4) {
+            top: 85%;
+            left: 15%;
             animation-delay: -7s;
         }
 
         @keyframes float {
-            0% {
-                transform: translate(0, 0) rotate(0deg);
-            }
-            25% {
-                transform: translate(20px, 30px) rotate(90deg);
-            }
-            50% {
-                transform: translate(0, 60px) rotate(180deg);
-            }
-            75% {
-                transform: translate(-20px, 30px) rotate(270deg);
-            }
-            100% {
-                transform: translate(0, 0) rotate(360deg);
-            }
+            0% { transform: translate(0, 0) rotate(0deg); }
+            25% { transform: translate(15px, 25px) rotate(90deg); }
+            50% { transform: translate(0, 50px) rotate(180deg); }
+            75% { transform: translate(-15px, 25px) rotate(270deg); }
+            100% { transform: translate(0, 0) rotate(360deg); }
         }
 
         /* Container */
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 0 20px;
             position: relative;
             z-index: 1;
         }
@@ -124,177 +109,272 @@
         /* Header */
         .header {
             text-align: center;
-            padding: 40px 20px;
-            margin-bottom: 30px;
+            padding: 40px 0 30px;
+            margin-bottom: 20px;
             position: relative;
-            overflow: hidden;
-            border-radius: 20px;
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            box-shadow: var(--shadow-medium);
-            border: 1px solid rgba(255, 255, 255, 0.15);
         }
 
-        .header::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 5px;
-            background: var(--gradient-gold);
+        .badge {
+            display: inline-block;
+            background: var(--gradient-red);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+            box-shadow: var(--shadow-light);
         }
 
         .header h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-family: 'Montserrat', sans-serif;
+            font-size: clamp(2.2rem, 5vw, 3.5rem);
             font-weight: 800;
             margin-bottom: 15px;
             background: var(--gradient-gold);
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-            animation: fadeInUp 1s ease-out;
+            line-height: 1.2;
         }
 
         .header h2 {
-            font-size: clamp(1.5rem, 3vw, 2.2rem);
+            font-size: clamp(1.3rem, 3vw, 1.8rem);
             font-weight: 600;
-            margin-bottom: 20px;
-            color: var(--accent-color);
-            animation: fadeInUp 1s ease-out 0.2s both;
+            margin-bottom: 25px;
+            color: var(--accent-gold);
         }
 
         .header p {
-            font-size: clamp(1.1rem, 2vw, 1.3rem);
+            font-size: clamp(1rem, 2vw, 1.2rem);
             max-width: 800px;
-            margin: 0 auto 25px;
-            line-height: 1.6;
+            margin: 0 auto 30px;
             opacity: 0.9;
-            animation: fadeInUp 1s ease-out 0.4s both;
+        }
+
+        .profile-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+            margin-bottom: 40px;
         }
 
         .profile-img {
-            width: 180px;
-            height: 180px;
+            width: 160px;
+            height: 160px;
             border-radius: 50%;
-            margin: 0 auto 25px;
-            border: 5px solid var(--accent-color);
+            border: 5px solid var(--accent-gold);
             box-shadow: var(--shadow-heavy);
             overflow: hidden;
             position: relative;
-            animation: fadeIn 1s ease-out 0.6s both;
+            background: var(--secondary-blue);
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
-        .profile-img img {
-            width: 100%;
+        .profile-img i {
+            font-size: 5rem;
+            color: var(--accent-gold);
+        }
+
+        .profile-info {
+            text-align: center;
+        }
+
+        .profile-info h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        .profile-info p {
+            font-size: 1.1rem;
+            color: var(--accent-gold);
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+
+        .achievement-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(212, 175, 55, 0.15);
+            padding: 12px 20px;
+            border-radius: 10px;
+            border-left: 4px solid var(--accent-gold);
+        }
+
+        .achievement-badge i {
+            color: var(--accent-gold);
+            font-size: 1.2rem;
+        }
+
+        /* Content Grid */
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        @media (min-width: 768px) {
+            .content-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .profile-section {
+                flex-direction: row;
+                justify-content: center;
+                text-align: left;
+            }
+            
+            .profile-info {
+                text-align: left;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .content-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: var(--shadow-light);
+            border: 1px solid rgba(212, 175, 55, 0.1);
+            transition: all 0.3s ease;
             height: 100%;
-            object-fit: cover;
+            display: flex;
+            flex-direction: column;
         }
 
-        .profile-img::after {
-            content: '🎓';
-            position: absolute;
-            bottom: 10px;
-            right: 10px;
-            width: 40px;
-            height: 40px;
-            background: var(--secondary-color);
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-medium);
+            border-color: rgba(212, 175, 55, 0.3);
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        .card-header i {
+            font-size: 1.8rem;
+            color: var(--accent-gold);
+            background: rgba(212, 175, 55, 0.1);
+            width: 50px;
+            height: 50px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 20px;
-            z-index: 2;
         }
 
-        /* Content Sections */
-        .content-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-bottom: 40px;
+        .card-header h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 700;
         }
 
-        .card {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
-            padding: 30px;
-            box-shadow: var(--shadow-medium);
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            transition: all 0.4s ease;
-            position: relative;
-            overflow: hidden;
+        .card-content {
+            flex-grow: 1;
         }
 
-        .card:hover {
-            transform: translateY(-10px);
-            box-shadow: var(--shadow-heavy);
-            background: rgba(255, 255, 255, 0.15);
-        }
-
-        .card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 5px;
-            background: var(--gradient-2);
-        }
-
-        .card h3 {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.8rem;
-            margin-bottom: 20px;
-            color: var(--accent-color);
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .card h3 i {
-            font-size: 1.5rem;
-        }
-
-        .card p {
-            line-height: 1.7;
+        .card-content p {
             margin-bottom: 15px;
-            font-size: 1.05rem;
         }
 
-        .card ul {
-            list-style-type: none;
-            padding-left: 0;
+        .card-list {
+            list-style: none;
         }
 
-        .card li {
+        .card-list li {
             padding: 10px 0;
             border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
             display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .card-list li:last-child {
+            border-bottom: none;
+        }
+
+        .card-list li i {
+            color: var(--accent-gold);
+            margin-top: 5px;
+            font-size: 0.9rem;
+        }
+
+        /* Interview Tips */
+        .interview-tips {
+            margin: 40px 0;
+            background: rgba(13, 27, 62, 0.7);
+            border-radius: 15px;
+            padding: 30px;
+            border-left: 5px solid var(--accent-red);
+        }
+
+        .interview-tips h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.8rem;
+            margin-bottom: 25px;
+            color: var(--accent-gold);
+            text-align: center;
+        }
+
+        .tips-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        @media (min-width: 768px) {
+            .tips-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .tip-item {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 10px;
+            border-top: 3px solid var(--accent-gold);
+        }
+
+        .tip-item h4 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: white;
+            display: flex;
             align-items: center;
             gap: 10px;
         }
 
-        .card li:last-child {
-            border-bottom: none;
-        }
-
-        .card li i {
-            color: var(--accent-color);
-            font-size: 0.9rem;
+        .tip-item h4 i {
+            color: var(--accent-gold);
         }
 
         /* Quote Section */
         .quote-section {
             text-align: center;
-            padding: 40px 30px;
+            padding: 40px 20px;
             margin: 40px 0;
-            background: rgba(255, 255, 255, 0.08);
-            border-radius: 20px;
-            border-left: 5px solid var(--accent-color);
+            background: rgba(212, 175, 55, 0.1);
+            border-radius: 15px;
             position: relative;
             overflow: hidden;
         }
@@ -302,41 +382,41 @@
         .quote-section::before {
             content: '"';
             position: absolute;
-            top: -40px;
+            top: -30px;
             left: 20px;
-            font-size: 120px;
-            color: rgba(255, 255, 255, 0.05);
-            font-family: 'Playfair Display', serif;
+            font-size: 100px;
+            color: rgba(212, 175, 55, 0.1);
+            font-family: 'Montserrat', serif;
         }
 
         .quote-section p {
-            font-size: clamp(1.3rem, 3vw, 1.8rem);
+            font-size: clamp(1.2rem, 3vw, 1.6rem);
             font-style: italic;
-            line-height: 1.6;
+            line-height: 1.5;
             margin-bottom: 20px;
             position: relative;
             z-index: 1;
         }
 
         .quote-author {
-            font-size: 1.2rem;
-            color: var(--accent-color);
+            font-size: 1.1rem;
+            color: var(--accent-gold);
             font-weight: 600;
         }
 
         /* Action Buttons */
         .action-buttons {
             display: flex;
-            justify-content: center;
             flex-wrap: wrap;
-            gap: 20px;
+            justify-content: center;
+            gap: 15px;
             margin: 40px 0;
         }
 
         .btn {
-            padding: 16px 32px;
+            padding: 14px 28px;
             border-radius: 50px;
-            font-size: 1.1rem;
+            font-size: 1rem;
             font-weight: 600;
             border: none;
             cursor: pointer;
@@ -345,17 +425,17 @@
             align-items: center;
             justify-content: center;
             gap: 10px;
-            min-width: 200px;
+            min-width: 180px;
             box-shadow: var(--shadow-medium);
         }
 
         .btn-primary {
-            background: var(--gradient-2);
+            background: var(--gradient-red);
             color: white;
         }
 
         .btn-secondary {
-            background: var(--gradient-3);
+            background: var(--gradient-gold);
             color: var(--dark-color);
         }
 
@@ -382,29 +462,13 @@
             margin-bottom: 10px;
         }
 
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 20px;
-        }
-
-        .social-icons a {
-            width: 45px;
-            height: 45px;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.1);
-            display: flex;
+        .footer-logo {
+            display: inline-flex;
             align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 1.2rem;
-            transition: all 0.3s ease;
-        }
-
-        .social-icons a:hover {
-            background: var(--secondary-color);
-            transform: translateY(-5px);
+            gap: 10px;
+            margin-top: 15px;
+            font-weight: 600;
+            color: var(--accent-gold);
         }
 
         /* Modal */
@@ -415,7 +479,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.85);
+            background: rgba(0, 0, 0, 0.9);
             z-index: 1000;
             justify-content: center;
             align-items: center;
@@ -424,69 +488,56 @@
         }
 
         .modal-content {
-            background: var(--gradient-1);
-            padding: 40px;
-            border-radius: 25px;
+            background: var(--primary-blue);
+            padding: 30px;
+            border-radius: 20px;
             max-width: 700px;
             width: 100%;
             max-height: 85vh;
             overflow-y: auto;
             position: relative;
             box-shadow: var(--shadow-heavy);
-            animation: slideUp 0.5s ease-out;
-            border: 2px solid var(--accent-color);
-        }
-
-        .modal-content::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 5px;
-            background: var(--gradient-gold);
+            animation: slideUp 0.4s ease-out;
+            border: 2px solid var(--accent-gold);
         }
 
         .modal-header {
             text-align: center;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.3);
         }
 
         .modal-header h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.5rem;
-            color: var(--accent-color);
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2rem;
+            color: var(--accent-gold);
             margin-bottom: 10px;
         }
 
-        .modal-header p {
-            font-size: 1.1rem;
-            opacity: 0.9;
-        }
-
         .modal-body {
-            margin-bottom: 30px;
+            margin-bottom: 25px;
         }
 
         .modal-wish {
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.05);
             padding: 20px;
-            border-radius: 15px;
+            border-radius: 10px;
             margin-bottom: 15px;
             display: flex;
             align-items: flex-start;
             gap: 15px;
             transition: all 0.3s ease;
-            border-left: 4px solid var(--accent-color);
+            border-left: 4px solid var(--accent-red);
         }
 
         .modal-wish:hover {
-            background: rgba(255, 255, 255, 0.15);
+            background: rgba(255, 255, 255, 0.08);
             transform: translateX(5px);
         }
 
         .modal-wish i {
-            color: var(--accent-color);
+            color: var(--accent-gold);
             font-size: 1.5rem;
             margin-top: 5px;
         }
@@ -494,22 +545,18 @@
         .modal-wish-content h4 {
             font-size: 1.2rem;
             margin-bottom: 8px;
-            color: var(--accent-color);
-        }
-
-        .modal-wish-content p {
-            line-height: 1.6;
+            color: var(--accent-gold);
         }
 
         .modal-close {
             display: block;
             margin: 0 auto;
-            padding: 14px 28px;
-            background: var(--gradient-2);
+            padding: 12px 24px;
+            background: var(--gradient-red);
             color: white;
             border: none;
             border-radius: 50px;
-            font-size: 1.1rem;
+            font-size: 1rem;
             font-weight: 600;
             cursor: pointer;
             transition: all 0.3s ease;
@@ -526,21 +573,10 @@
             to { opacity: 1; }
         }
 
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
         @keyframes slideUp {
             from {
                 opacity: 0;
-                transform: translateY(50px);
+                transform: translateY(40px);
             }
             to {
                 opacity: 1;
@@ -549,22 +585,26 @@
         }
 
         /* Responsive Design */
-        @media (max-width: 768px) {
-            .content-grid {
-                grid-template-columns: 1fr;
-            }
-            
+        @media (max-width: 767px) {
             .header {
-                padding: 30px 15px;
+                padding: 30px 0 20px;
             }
             
             .profile-img {
-                width: 150px;
-                height: 150px;
+                width: 140px;
+                height: 140px;
+            }
+            
+            .profile-img i {
+                font-size: 4rem;
             }
             
             .card {
-                padding: 25px;
+                padding: 20px;
+            }
+            
+            .interview-tips {
+                padding: 25px 20px;
             }
             
             .btn {
@@ -572,21 +612,29 @@
             }
             
             .modal-content {
-                padding: 25px;
+                padding: 25px 20px;
+            }
+            
+            .action-buttons {
+                flex-direction: column;
             }
         }
 
         @media (max-width: 480px) {
             .header h1 {
-                font-size: 2.2rem;
+                font-size: 1.8rem;
             }
             
             .header h2 {
+                font-size: 1.3rem;
+            }
+            
+            .profile-info h3 {
                 font-size: 1.5rem;
             }
             
-            .card h3 {
-                font-size: 1.5rem;
+            .card-header h3 {
+                font-size: 1.2rem;
             }
             
             .quote-section p {
@@ -594,123 +642,148 @@
             }
             
             .modal-header h2 {
-                font-size: 2rem;
+                font-size: 1.6rem;
             }
-        }
-
-        /* Additional Styling for UPSC Theme */
-        .upsc-badge {
-            display: inline-block;
-            background: var(--gradient-3);
-            color: var(--dark-color);
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            font-weight: 600;
-            margin-left: 10px;
-        }
-
-        .inspirational-quote {
-            font-size: 1.1rem;
-            font-style: italic;
-            text-align: center;
-            padding: 20px;
-            background: rgba(255, 193, 7, 0.1);
-            border-radius: 15px;
-            margin: 20px 0;
-            border-left: 4px solid var(--accent-color);
         }
     </style>
 </head>
 <body>
     <!-- Animated Background -->
-    <div class="bg-animation">
-        <div class="bg-circle"></div>
-        <div class="bg-circle"></div>
-        <div class="bg-circle"></div>
-        <div class="bg-circle"></div>
-    </div>
+    <div class="bg-pattern"></div>
+    <div class="floating-icon"><i class="fas fa-shield-alt"></i></div>
+    <div class="floating-icon"><i class="fas fa-user-secret"></i></div>
+    <div class="floating-icon"><i class="fas fa-star"></i></div>
+    <div class="floating-icon"><i class="fas fa-flag"></i></div>
 
     <div class="container">
         <!-- Header Section -->
         <header class="header">
-            <div class="profile-img">
-                <!-- Placeholder for Kunal's image -->
-                <div style="width:100%;height:100%;background:var(--gradient-2);display:flex;align-items:center;justify-content:center;font-size:4rem;">
-                    K
+            <div class="badge">Intelligence Bureau Interview</div>
+            <h1>Best Wishes Dilip Bhuttapalle</h1>
+            <h2>Congratulations on Prelims Success & Best Wishes for Interview</h2>
+            <p>Your dedication and perseverance have brought you to this crucial stage. As you prepare for your Intelligence Bureau interview, we extend our heartfelt wishes for your success in serving the nation.</p>
+            
+            <div class="profile-section">
+                <div class="profile-img">
+                    <i class="fas fa-user-secret"></i>
+                </div>
+                <div class="profile-info">
+                    <h3>Dilip Bhuttapalle</h3>
+                    <p>Intelligence Bureau Aspirant</p>
+                    <div class="achievement-badge">
+                        <i class="fas fa-trophy"></i>
+                        <span>Successfully Cleared IB Prelims Examination</span>
+                    </div>
                 </div>
             </div>
-            <h1>Happy Birthday Kunal! <span class="upsc-badge">UPSC Aspirant</span></h1>
-            <h2>Wishing You Success in Your Journey</h2>
-            <p>On your special day, we celebrate not just your birth but also your dedication, hard work, and unwavering commitment to serving the nation. May this year bring you closer to your IAS dreams!</p>
         </header>
 
         <!-- Content Grid -->
         <div class="content-grid">
-            <!-- Birthday Wishes Card -->
+            <!-- Interview Preparation Card -->
             <div class="card">
-                <h3><i class="fas fa-birthday-cake"></i> Birthday Blessings</h3>
-                <p>Dear Kunal, as you celebrate another year of life, may you be blessed with:</p>
-                <ul>
-                    <li><i class="fas fa-check-circle"></i> Unwavering determination for your UPSC preparation</li>
-                    <li><i class="fas fa-check-circle"></i> Clarity of thought in every subject you study</li>
-                    <li><i class="fas fa-check-circle"></i> Excellent health and boundless energy</li>
-                    <li><i class="fas fa-check-circle"></i> Success in every mock test and exam</li>
-                    <li><i class="fas fa-check-circle"></i> Happiness that multiplies with each passing day</li>
-                </ul>
-                <div class="inspirational-quote">
-                    "The future belongs to those who believe in the beauty of their dreams." - Eleanor Roosevelt
+                <div class="card-header">
+                    <i class="fas fa-clipboard-check"></i>
+                    <h3>Interview Preparation</h3>
+                </div>
+                <div class="card-content">
+                    <p>Your Intelligence Bureau interview is the gateway to serving the nation. Focus on these key areas:</p>
+                    <ul class="card-list">
+                        <li><i class="fas fa-check"></i> <strong>Current Affairs:</strong> National & international events</li>
+                        <li><i class="fas fa-check"></i> <strong>Security Issues:</strong> Internal & external security challenges</li>
+                        <li><i class="fas fa-check"></i> <strong>Analytical Ability:</strong> Situation analysis and problem-solving</li>
+                        <li><i class="fas fa-check"></i> <strong>Communication:</strong> Clear and confident expression</li>
+                        <li><i class="fas fa-check"></i> <strong>Ethics & Integrity:</strong> Core values for intelligence work</li>
+                    </ul>
                 </div>
             </div>
 
-            <!-- UPSC Motivation Card -->
+            <!-- Success Qualities Card -->
             <div class="card">
-                <h3><i class="fas fa-graduation-cap"></i> UPSC Motivation</h3>
-                <p>Your journey toward becoming a civil servant is challenging but immensely rewarding. Remember:</p>
-                <ul>
-                    <li><i class="fas fa-book"></i> Every hour you study builds your future</li>
-                    <li><i class="fas fa-brain"></i> Your perseverance will overcome any difficulty</li>
-                    <li><i class="fas fa-chart-line"></i> Progress may seem slow, but it's happening</li>
-                    <li><i class="fas fa-trophy"></i> The joy of serving the nation awaits you</li>
-                    <li><i class="fas fa-users"></i> You have a support system cheering for you</li>
-                </ul>
-                <p style="margin-top: 15px; font-weight: 500;">We believe in your ability to crack the UPSC exam and make a meaningful difference in society.</p>
+                <div class="card-header">
+                    <i class="fas fa-star"></i>
+                    <h3>Your Strengths</h3>
+                </div>
+                <div class="card-content">
+                    <p>You possess the qualities that make an exceptional Intelligence Bureau officer:</p>
+                    <ul class="card-list">
+                        <li><i class="fas fa-check"></i> <strong>Discipline:</strong> Demonstrated through your preparation</li>
+                        <li><i class="fas fa-check"></i> <strong>Analytical Mind:</strong> Essential for intelligence assessment</li>
+                        <li><i class="fas fa-check"></i> <strong>Patriotism:</strong> The driving force for national service</li>
+                        <li><i class="fas fa-check"></i> <strong>Perseverance:</strong> Overcoming challenges with determination</li>
+                        <li><i class="fas fa-check"></i> <strong>Attention to Detail:</strong> Crucial for intelligence work</li>
+                    </ul>
+                    <p style="margin-top: 15px; font-style: italic;">These qualities will shine through in your interview.</p>
+                </div>
             </div>
 
-            <!-- Success Path Card -->
+            <!-- Final Tips Card -->
             <div class="card">
-                <h3><i class="fas fa-route"></i> Path to Success</h3>
-                <p>As you continue your UPSC preparation journey, keep these guiding principles in mind:</p>
-                <ul>
-                    <li><i class="fas fa-bullseye"></i> <strong>Consistency:</strong> Regular study beats last-minute cramming</li>
-                    <li><i class="fas fa-clock"></i> <strong>Time Management:</strong> Balance studies with rest and recreation</li>
-                    <li><i class="fas fa-eye"></i> <strong>Vision:</strong> Keep your ultimate goal clear in your mind</li>
-                    <li><i class="fas fa-hands-helping"></i> <strong>Support:</strong> Don't hesitate to seek guidance when needed</li>
-                    <li><i class="fas fa-heart"></i> <strong>Self-care:</strong> Your well-being is crucial for peak performance</li>
-                </ul>
+                <div class="card-header">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Final Tips</h3>
+                </div>
+                <div class="card-content">
+                    <p>As you approach your interview day, remember these important points:</p>
+                    <ul class="card-list">
+                        <li><i class="fas fa-check"></i> Stay calm and composed under pressure</li>
+                        <li><i class="fas fa-check"></i> Be honest about what you know and don't know</li>
+                        <li><i class="fas fa-check"></i> Maintain eye contact and confident body language</li>
+                        <li><i class="fas fa-check"></i> Connect answers to national security perspectives</li>
+                        <li><i class="fas fa-check"></i> Show your commitment to serving the nation</li>
+                    </ul>
+                    <p style="margin-top: 15px; font-weight: 500;">Trust your preparation and let your capabilities speak for themselves.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Interview Tips Section -->
+        <div class="interview-tips">
+            <h3>Intelligence Bureau Interview Tips</h3>
+            <div class="tips-grid">
+                <div class="tip-item">
+                    <h4><i class="fas fa-brain"></i> Mental Preparedness</h4>
+                    <p>Stay mentally agile for situational questions. Practice mock interviews to build confidence in handling unexpected queries.</p>
+                </div>
+                <div class="tip-item">
+                    <h4><i class="fas fa-newspaper"></i> Current Affairs</h4>
+                    <p>Review major national and international events from the past year, especially those related to internal security and intelligence.</p>
+                </div>
+                <div class="tip-item">
+                    <h4><i class="fas fa-balance-scale"></i> Ethical Dimensions</h4>
+                    <p>Be prepared to discuss ethical dilemmas in intelligence work. The IB values integrity above all else.</p>
+                </div>
+                <div class="tip-item">
+                    <h4><i class="fas fa-comments"></i> Communication Skills</h4>
+                    <p>Articulate your thoughts clearly and concisely. Practice explaining complex security concepts in simple terms.</p>
+                </div>
             </div>
         </div>
 
         <!-- Quote Section -->
         <div class="quote-section">
-            <p>"The best way to predict your future is to create it. Kunal, your dedication to UPSC preparation today is creating your destiny as a civil servant who will shape India's tomorrow."</p>
-            <div class="quote-author">- Aditya Sase</div>
+            <p>"The safety and security of our nation depends on dedicated individuals like you, Dilip. Your journey to join the Intelligence Bureau is a testament to your commitment to serve and protect India."</p>
+            <div class="quote-author">- Best Wishes for Your Success</div>
         </div>
 
         <!-- Action Buttons -->
         <div class="action-buttons">
             <button class="btn btn-primary" id="specialWishesBtn">
-                <i class="fas fa-gift"></i> Special Birthday Wishes
+                <i class="fas fa-shield-alt"></i> Special Wishes
             </button>
-            <button class="btn btn-secondary" id="motivationBtn">
-                <i class="fas fa-fire"></i> UPSC Motivation Boost
+            <button class="btn btn-secondary" id="tipsBtn">
+                <i class="fas fa-lightbulb"></i> Interview Tips
             </button>
         </div>
 
         <!-- Footer -->
         <footer class="footer">
-            <p>Made with <i class="fas fa-heart" style="color:#ff5722;"></i>Aditya Sase</p>
-           
+            <p>Best Wishes for Your Intelligence Bureau Interview Success</p>
+            <p>May you serve the nation with distinction and honor</p>
+            <div class="footer-logo">
+                <i class="fas fa-shield-alt"></i>
+                <span>India Intelligence Bureau</span>
+            </div>
         </footer>
     </div>
 
@@ -718,31 +791,23 @@
     <div class="modal" id="wishesModal">
         <div class="modal-content">
             <div class="modal-header">
-                <h2>Special Birthday Wishes for Kunal</h2>
-                <p>Heartfelt messages for your special day and UPSC journey</p>
+                <h2>Special Wishes for Dilip</h2>
+                <p>Heartfelt messages for your Intelligence Bureau interview success</p>
             </div>
             <div class="modal-body">
                 <div class="modal-wish">
                     <i class="fas fa-star"></i>
                     <div class="modal-wish-content">
-                        <h4>From All of Us</h4>
-                        <p>Happy Birthday, Kunal! May this year bring you immense success in your UPSC journey. Your dedication inspires everyone around you. Keep shining!</p>
-                    </div>
-                </div>
-                
-                <div class="modal-wish">
-                    <i class="fas fa-book-open"></i>
-                    <div class="modal-wish-content">
-                        <h4>For Your Studies</h4>
-                        <p>May every page you turn bring you closer to your goal. May complex topics become clear and your knowledge deepen with each study session.</p>
+                        <h4>For Your Preparation</h4>
+                        <p>Dilip, your hard work in clearing the prelims has shown your capability. As you prepare for the interview, may every piece of information you study come to your aid when needed most.</p>
                     </div>
                 </div>
                 
                 <div class="modal-wish">
                     <i class="fas fa-shield-alt"></i>
                     <div class="modal-wish-content">
-                        <h4>For Your Determination</h4>
-                        <p>Your unwavering commitment to becoming an IAS officer is admirable. May your resolve strengthen with each passing day.</p>
+                        <h4>For Your Interview</h4>
+                        <p>May you face the interview panel with confidence and clarity. May your answers reflect both knowledge and the right attitude for serving in the Intelligence Bureau.</p>
                     </div>
                 </div>
                 
@@ -750,94 +815,92 @@
                     <i class="fas fa-flag"></i>
                     <div class="modal-wish-content">
                         <h4>For Your Future Service</h4>
-                        <p>May you soon serve the nation with integrity and compassion. Your journey will inspire many others to follow in your footsteps.</p>
-                    </div>
-                </div>
-                
-                <div class="modal-wish">
-                    <i class="fas fa-heart"></i>
-                    <div class="modal-wish-content">
-                        <h4>For Your Well-being</h4>
-                        <p>Remember to take care of yourself along this challenging path. Your health and happiness are as important as your success.</p>
-                    </div>
-                </div>
-            </div>
-            <button class="modal-close" id="closeWishesModal">Close</button>
-        </div>
-    </div>
-
-    <!-- Motivation Modal -->
-    <div class="modal" id="motivationModal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2>UPSC Motivation for Kunal</h2>
-                <p>Powerful reminders for your civil services preparation journey</p>
-            </div>
-            <div class="modal-body">
-                <div class="modal-wish">
-                    <i class="fas fa-quote-left"></i>
-                    <div class="modal-wish-content">
-                        <h4>Remember Your 'Why'</h4>
-                        <p>On tough days, remember why you started this journey. The impact you'll make as a civil servant will be worth every hour of study.</p>
-                    </div>
-                </div>
-                
-                <div class="modal-wish">
-                    <i class="fas fa-mountain"></i>
-                    <div class="modal-wish-content">
-                        <h4>The Summit Awaits</h4>
-                        <p>UPSC preparation is like climbing a mountain. The path is steep, but the view from the top is breathtaking. Keep climbing!</p>
-                    </div>
-                </div>
-                
-                <div class="modal-wish">
-                    <i class="fas fa-history"></i>
-                    <div class="modal-wish-content">
-                        <h4>History in the Making</h4>
-                        <p>You're not just studying history; you're preparing to make it. Future generations will read about your contributions to India.</p>
-                    </div>
-                </div>
-                
-                <div class="modal-wish">
-                    <i class="fas fa-lightbulb"></i>
-                    <div class="modal-wish-content">
-                        <h4>Trust Your Preparation</h4>
-                        <p>Every concept you've mastered, every essay you've written, every current affair you've analyzed - it has all prepared you for success.</p>
+                        <p>May you soon wear the badge of honor as an Intelligence Bureau officer, serving the nation with integrity, courage, and dedication that makes everyone proud.</p>
                     </div>
                 </div>
                 
                 <div class="modal-wish">
                     <i class="fas fa-users"></i>
                     <div class="modal-wish-content">
-                        <h4>You're Not Alone</h4>
-                        <p>Thousands aspire, hundreds prepare, but only the persistent succeed. You have what it takes to be among the successful ones.</p>
+                        <h4>From All Well-wishers</h4>
+                        <p>We believe in your ability to excel in this interview. Your determination and intelligence will surely impress the selection committee. Go make us proud!</p>
                     </div>
                 </div>
             </div>
-            <button class="modal-close" id="closeMotivationModal">Close </button>
+            <button class="modal-close" id="closeWishesModal">Close Wishes</button>
+        </div>
+    </div>
+
+    <!-- Interview Tips Modal -->
+    <div class="modal" id="tipsModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>IB Interview Success Tips</h2>
+                <p>Essential guidance for your Intelligence Bureau interview</p>
+            </div>
+            <div class="modal-body">
+                <div class="modal-wish">
+                    <i class="fas fa-brain"></i>
+                    <div class="modal-wish-content">
+                        <h4>1. Stay Calm Under Pressure</h4>
+                        <p>Intelligence work involves high-pressure situations. Show the panel you can maintain composure when faced with challenging questions.</p>
+                    </div>
+                </div>
+                
+                <div class="modal-wish">
+                    <i class="fas fa-eye"></i>
+                    <div class="modal-wish-content">
+                        <h4>2. Observational Skills</h4>
+                        <p>Be observant of your surroundings and people. These skills are essential for intelligence work and might be subtly tested during the interview.</p>
+                    </div>
+                </div>
+                
+                <div class="modal-wish">
+                    <i class="fas fa-balance-scale"></i>
+                    <div class="modal-wish-content">
+                        <h4>3. Ethical Framework</h4>
+                        <p>Be prepared to discuss ethical dilemmas. The IB needs officers with strong moral compasses who can make tough decisions while maintaining integrity.</p>
+                    </div>
+                </div>
+                
+                <div class="modal-wish">
+                    <i class="fas fa-globe-asia"></i>
+                    <div class="modal-wish-content">
+                        <h4>4. National Perspective</h4>
+                        <p>Frame your answers with a national security perspective. Show that you understand how individual actions impact larger security scenarios.</p>
+                    </div>
+                </div>
+                
+                <div class="modal-wish">
+                    <i class="fas fa-history"></i>
+                    <div class="modal-wish-content">
+                        <h4>5. Know Your Motivation</h4>
+                        <p>Be clear about why you want to join the Intelligence Bureau. Your genuine motivation to serve the nation will resonate with the interview panel.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="modal-close" id="closeTipsModal">Close Tips</button>
         </div>
     </div>
 
     <script>
         // DOM Elements
         const specialWishesBtn = document.getElementById('specialWishesBtn');
-        const motivationBtn = document.getElementById('motivationBtn');
+        const tipsBtn = document.getElementById('tipsBtn');
         const wishesModal = document.getElementById('wishesModal');
-        const motivationModal = document.getElementById('motivationModal');
+        const tipsModal = document.getElementById('tipsModal');
         const closeWishesModal = document.getElementById('closeWishesModal');
-        const closeMotivationModal = document.getElementById('closeMotivationModal');
+        const closeTipsModal = document.getElementById('closeTipsModal');
 
         // Open Special Wishes Modal
         specialWishesBtn.addEventListener('click', function() {
             wishesModal.style.display = 'flex';
-            // Add celebration effect
-            createCelebration();
+            createConfettiEffect();
         });
 
-        // Open Motivation Modal
-        motivationBtn.addEventListener('click', function() {
-            motivationModal.style.display = 'flex';
-            // Add motivation effect
+        // Open Tips Modal
+        tipsBtn.addEventListener('click', function() {
+            tipsModal.style.display = 'flex';
             createMotivationEffect();
         });
 
@@ -846,8 +909,8 @@
             wishesModal.style.display = 'none';
         });
 
-        closeMotivationModal.addEventListener('click', function() {
-            motivationModal.style.display = 'none';
+        closeTipsModal.addEventListener('click', function() {
+            tipsModal.style.display = 'none';
         });
 
         // Close modals when clicking outside
@@ -855,17 +918,17 @@
             if (event.target === wishesModal) {
                 wishesModal.style.display = 'none';
             }
-            if (event.target === motivationModal) {
-                motivationModal.style.display = 'none';
+            if (event.target === tipsModal) {
+                tipsModal.style.display = 'none';
             }
         });
 
-        // Celebration effect for birthday wishes
-        function createCelebration() {
-            const colors = ['#ff5722', '#ffc107', '#4caf50', '#2196f3', '#9c27b0'];
+        // Confetti effect for wishes
+        function createConfettiEffect() {
+            const colors = ['#d4af37', '#b22222', '#1c2e5e', '#ffffff'];
             const container = document.body;
             
-            for (let i = 0; i < 30; i++) {
+            for (let i = 0; i < 25; i++) {
                 const confetti = document.createElement('div');
                 confetti.style.position = 'fixed';
                 confetti.style.width = '10px';
@@ -877,7 +940,6 @@
                 confetti.style.zIndex = '9999';
                 confetti.style.opacity = '0.8';
                 
-                // Animation
                 const animation = confetti.animate([
                     { transform: 'translateY(0) rotate(0deg)', opacity: 1 },
                     { transform: `translateY(${window.innerHeight + 100}px) rotate(${Math.random() * 360}deg)`, opacity: 0 }
@@ -888,25 +950,20 @@
                 
                 container.appendChild(confetti);
                 
-                // Remove after animation
                 animation.onfinish = () => confetti.remove();
             }
-            
-            // Play a subtle sound (using text to speech as fallback)
-            speakText("Happy Birthday Kunal! Best wishes for your UPSC success!");
         }
 
         // Motivation effect
         function createMotivationEffect() {
             const quotes = [
-                "You've got this, Kunal!",
-                "Future IAS officer in the making!",
-                "Your hard work will pay off!",
-                "Believe in yourself!",
-                "Success is waiting for you!"
+                "You've got this, Dilip!",
+                "Future IB officer in the making!",
+                "Your preparation will shine through!",
+                "Serve the nation with pride!",
+                "Success awaits you!"
             ];
             
-            // Display a random motivational quote as a floating message
             const quote = quotes[Math.floor(Math.random() * quotes.length)];
             const message = document.createElement('div');
             message.textContent = quote;
@@ -914,7 +971,7 @@
             message.style.top = '50%';
             message.style.left = '50%';
             message.style.transform = 'translate(-50%, -50%)';
-            message.style.backgroundColor = 'rgba(255, 87, 34, 0.9)';
+            message.style.backgroundColor = 'rgba(178, 34, 34, 0.9)';
             message.style.color = 'white';
             message.style.padding = '15px 25px';
             message.style.borderRadius = '50px';
@@ -924,7 +981,6 @@
             
             document.body.appendChild(message);
             
-            // Animate and remove
             setTimeout(() => {
                 message.style.transition = 'all 0.5s ease';
                 message.style.opacity = '0';
@@ -938,40 +994,25 @@
             }, 2000);
         }
 
-        // Text-to-speech function for accessibility and celebration
-        function speakText(text) {
-            if ('speechSynthesis' in window) {
-                const speech = new SpeechSynthesisUtterance();
-                speech.text = text;
-                speech.volume = 0.7;
-                speech.rate = 1;
-                speech.pitch = 1;
-                window.speechSynthesis.speak(speech);
-            }
-        }
-
-        // Add some interactive elements to cards on hover
+        // Add hover effects to cards
         document.querySelectorAll('.card').forEach(card => {
             card.addEventListener('mouseenter', function() {
-                this.style.transform = 'translateY(-10px) scale(1.02)';
+                this.style.transform = 'translateY(-8px)';
             });
             
             card.addEventListener('mouseleave', function() {
-                this.style.transform = 'translateY(0) scale(1)';
+                this.style.transform = 'translateY(0)';
             });
         });
 
         // Page load animation
         document.addEventListener('DOMContentLoaded', function() {
             // Animate elements sequentially
-            const animatedElements = document.querySelectorAll('.header h1, .header h2, .header p, .profile-img, .card, .quote-section, .action-buttons');
+            const animatedElements = document.querySelectorAll('.header h1, .header h2, .header p, .profile-section, .card, .interview-tips, .quote-section, .action-buttons');
             
             animatedElements.forEach((el, index) => {
-                el.style.animationDelay = `${index * 0.1}s`;
+                el.style.animation = `fadeIn 0.5s ease-out ${index * 0.1}s both`;
             });
-            
-            // Initial celebration
-            setTimeout(createCelebration, 500);
         });
     </script>
 </body>
